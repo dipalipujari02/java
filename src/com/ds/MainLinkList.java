@@ -1,6 +1,6 @@
 package com.ds;
 
-public class MainDs {
+public class MainLinkList {
     public static void main(String[] args) {
 
         DemoLinkedList ll = new DemoLinkedList();
@@ -10,11 +10,20 @@ public class MainDs {
         ll.inestAtEnd(40);
         ll.inestAtEnd(20);
 
-        
+
+
+        ll.display();
         ll.insertAtStart(5);
         ll.insertInBetween(3,15);
-     //   ll.RemoveNode(2,20);
         ll.display();
         System.out.println(ll.getsize());
+        ll.deleteNode(4);
+        ll.display();
+        System.out.println(ll.getsize());
+        ll.deleteFirst();
+        ll.deleteLast();
+        ll.display();
+
+
     }
 }

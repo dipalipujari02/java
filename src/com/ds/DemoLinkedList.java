@@ -54,21 +54,46 @@ public class DemoLinkedList {
          temp.next =t;
      }
 
-//     void deleteNode(int position ,int data){
-//        Node a = new Node(data);
-//        Node temp =head;
-//        if(position == 1){
-//            temp.next = head;
-//            temp=head;
-//        }else {
+     void deleteNode(int position){
+        Node temp =head;
+        if(position == 0){
+            temp = temp.next;
+            return;
+        }
+          for(int i =0;i<position-1;i++){
+              temp=temp.next;
+          }
+              temp.next=temp.next.next;
+          }
+     void deleteFirst(){
+        if(head==null){
+            System.out.println("List is empty");
+        }
+        head = head.next;
+     }
+
+     void deleteLast(){
+        if(head==null){
+            System.out.println("empty");
+        }
+        if(head.next==null){
+            head=null;
+            return;
+        }
+        Node secondlast = head;
+        Node lastNode = head.next;
+        while(lastNode.next != null){
+            lastNode=lastNode.next;
+            secondlast=secondlast.next;
+        }
+        secondlast.next=null;
+     }
+
+
+        }
 
 
 
- //       }
-
-   //  }
-
-}
 
 
 
