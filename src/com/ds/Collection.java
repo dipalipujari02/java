@@ -47,21 +47,21 @@ public class Collection {
 //        System.out.println(pq);
 //
 
-//        HashSet has = new HashSet<>();
-//        has.add(80);
-//        has.add(70);
-//        has.add(34);
-//        has.add(10);
-//        has.add(50);
-//        has.add(80);
-//        has.add(100);
-//        has.add(34);
-//        has.add(60);
-//        has.add(10);
-//        has.add(40);
-//        has.add(20);
-//        has.add(4);
-//        System.out.println(has);
+        HashSet has = new HashSet<>();
+        has.add(80);
+        has.add(70);
+        has.add(34);
+        has.add(10);
+        has.add(50);
+        has.add(80);
+        has.add(100);
+        has.add(34);
+        has.add(60);
+        has.add(10);
+        has.add(40);
+        has.add(20);
+        has.add(4);
+        System.out.println(has);
 
 //       TreeSet<String> ts = new TreeSet<String>();
 //       ts.add("Digu");
