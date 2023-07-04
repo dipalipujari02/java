@@ -36,16 +36,20 @@ public class DemoRegex {
         boolean fname  = fullname.matches();
         System.out.println("full name = "+fname);
 
-//        Pattern pmail = Pattern.compile("^[a-z0-9]{1,}[@.!#4%^&*~-]{1,}");
-//        Matcher m2 = pmail.matcher("dipalipujari02@gmail.com");
-//        boolean mail  = m2.matches();
-//        System.out.println("mail  = "+mail);
 
 
-        Pattern pmail = Pattern.compile("^[A-Za-z0-9@.!#4%^&*~-]{1,}");
+
+        Pattern pmail = Pattern.compile("^[a-z0-9]{1,}[@*&^%$#!]{1}[a-z]{1,5}[.]{1}[a-z]{2,3}");
         Matcher m2 = pmail.matcher("dipalipujari02@gmail.com");
         boolean mail  = m2.matches();
         System.out.println("mail  = "+mail);
+
+
+
+//        Pattern pmail = Pattern.compile("^[A-Za-z0-9@.!#4%^&*~-]{1,}");
+//        Matcher m2 = pmail.matcher("dipalipujari02@gmail.com");
+//        boolean mail  = m2.matches();
+//        System.out.println("mail  = "+mail);
 
 
 
@@ -54,7 +58,13 @@ public class DemoRegex {
         boolean pass  = m3.matches();
         System.out.println("password  = "+pass);
 
-
+        Pattern p4 = Pattern.compile("^[a-zA-Z]{1,}\s[0-9]{1,5}");
+        Matcher m4 = p4.matcher("DipaliPujari 1999");
+        if(m4.matches()){
+            System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
 
 
 
